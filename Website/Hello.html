@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>YoungTraders - learn and trade young</title>
+    <link rel="stylesheet" href="youngT.css">
+</head>
+<body>
+    <header class="headerclass">
+        <div class="row">
+            <div class="col-4">
+                <div class="pagelogo">
+                    <img src="YoungTrader.png" alt="YoungTraders logo">
+                </div>
+            </div>
+            <div class="col-8 headingtext">
+                <h1>Welcome to YoungTraders</h1>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="ulnav" id="dropdownClick">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="navright"><a href="#signin">Sign In</a></li>
+            <li class="navright"><a href="#signup">Sign Up</a></li>
+            <li class="dropdownIcon"><a href="javascript:void(0);" 
+                onclick="dropdownMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="section-1-background">
+        <div class="row">
+            <div class="col-5">
+            <div class="intropara">
+                <p>YoungTraders is among the best and effective page to learn <b>Stock Market trading</b>. 
+                    Learning is fun when you <em>learn to Earn.</em></p>
+                    <h2>Why YoungTraders ? </h2>
+                    <ol>
+                        <li>Learn from Basics</li>
+                        <li>Fun and exciting</li>
+                        <li>Affordable</li>
+                    </ol>
+            </div>
+            </div>
+            <div class="col-7">
+            <div class="videoContainer">
+                <iframe width="400" height="220" 
+                    src="https://www.youtube.com/embed/3UF0ymVdYLA" 
+                    frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="container " id="section-1-background">
+        <div class="row">
+            <div class="col-2">
+                <div class="box">
+                    <button>Equity</button>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="box">
+                    <button>Futures</button>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="box">
+                    <button>Options</button>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="box">
+                    <button>Intraday</button>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="box">
+                    <button>Swing</button>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="box">
+                    <button>Positional</button>
+                </div>
+            </div>
+        </div>
+    </div>
+            
+
+    <div class="container bottom">
+        <div class="row">
+            <div class="col-4">
+                <div class="formFields">
+                    <h2>Contact Us</h2>
+                    <form>
+                    <Label>Name :</Label>
+                    <input class="inputbox" name="name" placeholder="Full name" type="text"><br>
+                    <label>Email :</Label>
+                    <input class="inputbox" name="email" placeholder="Email ID"  type="text"><br>
+                    <button>Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+    
+
+
+    <script>
+        function dropdownMenu() {
+            var x =document.getElementById("dropdownClick");
+            if (x.className === "ulnav") {
+                x.className += " responsive";
+                /*change topnav to topnav.responsive*/
+            }
+            else {
+                x.className = "ulnav"
+            }
+        }
+    </script>
+</body>
+</html>

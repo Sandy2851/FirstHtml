@@ -1,0 +1,271 @@
+/*######## Defaults ##########*/
+
+header, footer, nav {
+    display: block;
+}
+
+body {
+    margin: 0;
+    line-height: 1;
+}
+
+
+/*######## Custom styles ############*/
+
+.headerclass {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #ffbb27;
+}
+
+.container {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: auto;
+    width: 100%;
+}
+
+.pagelogo img {
+    height: 120px;
+    width: 120px;
+    display: block;
+    border-radius: 50%;
+    float: right;
+}
+
+div.headingtext h1 {
+    float: left;
+    font-weight: 700;
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 3px #000;
+    margin-top: 2.5%;
+}
+
+#section-1-background {
+    background: #ffbb27;
+  /*  background: -webkit-linear-gradient(#ffbb27, #ffc955); */
+}
+
+div.intropara {
+    padding-left: 10%;
+    padding-right: 5%;
+    font-weight: 600;
+    color: rgb(37, 37, 37);
+   text-shadow: -0.5px -0.5px 0.5px #666;
+}
+
+div.intropara p, div.intropara li{
+    font-size: 22px;
+    line-height: 1.4;
+}
+
+div.intropara em, div.intropara h2 {
+    color: #000;    
+}
+
+div.box button  {
+    text-align: center;
+    background-color: #eead22;
+    margin: 10%;
+    padding: 10% 15%;
+    width: 80%;
+    font-weight: 700;
+    color: #ffffff;
+    border-radius: 7px;
+    border: none;
+    font-size: 28px;
+    box-shadow: 2px 2px 10px 1px #725801,
+    -2px -2px 10px 1px #725801;
+    overflow: hidden;
+}
+
+div.box button:hover {
+    background-color: #000;
+    color: #ffffff;
+}
+
+div.bottom {
+    background-color: rgb(34, 34, 34);
+}
+
+div.formFields {
+    margin-left: 10%;
+}
+
+div.formFields h2 {
+    color: #ffffff;
+    font-size: 35px;
+}
+
+div.formFields Label {
+    font-size: 23px;
+    color: #ffffff;
+    font-weight: 700;
+   /* margin: 15px 15px 15px 0px; 
+    line-height: 1.5em; */
+}
+
+input[type="text"] {
+    font-size: 15px;
+    padding: 5px;
+    width: 65%;
+    margin: 5px;
+    border-radius: 7%;
+}
+
+div.formFields button {
+    font-size: 18px;
+    margin: 5% 0% 5% 70%;
+    padding: 5px;
+    color: #000;
+    font-weight: 700;
+
+}
+
+div.formFields button:hover {
+    background-color: rgb(255, 179, 16);
+    color: #ffffff;
+
+}
+
+div.videoContainer {
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+/*####### Nav bar #########*/
+
+nav {
+    margin: 0;
+    width: 100%;
+}
+
+nav ul {
+    background-color: rgb(7, 4, 4);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.ulnav li {
+    list-style: none;
+    float: left;
+}
+
+ul.ulnav li.navright {
+    float:right;
+}
+
+ul.ulnav li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: rgb(255, 174, 0);
+}
+
+ul.ulnav li a:hover {
+    background-color: rgb(248, 170, 1);
+    color: #ffffff;
+}
+
+ul.ulnav li.dropdownIcon {
+    display: none;
+}
+
+/*######## Responsive ########*/
+
+@media screen and (max-width:800px) {
+    div.headingtext h1 {
+        font-size: 45px;
+    }
+
+    ul.ulnav li:not(:nth-child(1)) {
+        display: none;
+    }
+
+    ul.ulnav li.dropdownIcon {
+        display: block;
+        float: right;
+    }
+
+    ul.ulnav.responsive li.dropdownIcon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    } 
+
+    ul.ulnav.responsive {
+        position: relative;
+    }
+
+    ul.ulnav.responsive li {
+        display: inline;
+        float: none;
+        
+    }
+
+    ul.ulnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+
+    .col-5, .col-7 {
+        width: 100%;
+    }
+
+    div.videoContainer {
+        margin-left: 10%;
+        margin-bottom: 5%;
+    }
+
+    .videoContainer iframe {
+        position: relative;
+        width: 90%;
+        margin: 0%;
+        overflow: hidden;
+    }
+
+    div.bottom .col-4 {
+        width: 100%;
+    }
+
+    .col-2 {
+        width: 33.33%;
+    }
+
+    div.box button {
+        font-size: 20px;
+    }
+}
